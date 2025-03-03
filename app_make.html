@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create App</title>
+    <style>
+        body { background: black; color: white; text-align: center; font-family: Arial, sans-serif; }
+        .container { max-width: 400px; margin: auto; padding: 20px; background: #222; border-radius: 10px; }
+        input, button { width: 100%; padding: 10px; margin: 5px 0; border-radius: 5px; }
+        button { background: gray; color: white; border: none; cursor: pointer; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Create Your App</h2>
+        <input type="file" id="pythonFile">
+        <input type="text" id="appName" placeholder="App Name">
+        <input type="text" id="appVersion" placeholder="Version">
+        <input type="file" id="appLogo" accept="image/*">
+        <button onclick="generateAPK()">Generate APK</button>
+    </div>
+    <script>
+        function generateAPK() {
+            alert("APK generation started (Backend needed)");
+            location.href = 'download.html';
+        }
+    </script>
+</body>
+</html>
